@@ -1,64 +1,70 @@
 * {
     margin: 0; padding: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
 }
 
 body{
     display: grid;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    grid-row: 1;
+    background-color: #FEDBAF;
 }
 
 #header{
-    background-color: aqua;
-    grid-column: 1/4;
-    grid-row: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 85%;
 }
 
+#header img{
+    padding-left:10px;
+    height: 100px;
+}
+
+nav{
+    padding-right:25px;
+}
+
+nav a{
+    color: #492E16;
+    text-decoration: none;
+    margin-inline: 6px;
+}
+
+
 #story{
-    background-color: purple;
-    grid-column: 1;
+    background-color: green;
     grid-row: 2;
 }
 
 #mission{
-    background-color: orange;
-    grid-column: 2;
-    grid-row: 2;
-}
-
-#team{
-    background-color: gray;
-    grid-column: 3;
-    grid-row: 2;
-}
-
-#storytext{
-    background-color: green;
-    grid-column: 1;
-    grid-row: 3/5;
-}
-
-#missiontext{
     background-color: yellow;
-    grid-column: 2;
-    grid-row: 3/5;
-}
-
-#team1{
-    background-color: black;
-    grid-column: 3;
     grid-row: 3;
 }
 
-#team2{
-    background-color: red;
-    grid-column: 3;
+#team{
+    background-color: peru;
     grid-row: 4;
 }
 
-#footer{
-    background-color: pink;
-    grid-column: 1/4;
+footer{
     grid-row: 5;
+    background-color: #AEC4D5;
+    height: 50px;
+}
+
+footer p{
+    font-size: smaller;
+    font-style: italic;
+    text-align: center;
+    padding: 15px;
 }
