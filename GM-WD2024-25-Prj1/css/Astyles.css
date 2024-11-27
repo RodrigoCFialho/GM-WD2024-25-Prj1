@@ -6,7 +6,7 @@
 
 body{
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-columns: 1fr;
     width: 100%;
     height: 100%;
@@ -40,20 +40,57 @@ nav a{
     margin-inline: 6px;
 }
 
+span{
+    font-weight: bold;
+}
+
+#main{
+    color: #492E16;
+    background-image: url(../img/gradient_bg.jpg);
+    background-position: center;
+    height: 593px; 
+    background-repeat: repeat;
+    background-size:auto;
+}
+
+h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-block: 40px;
+    font-size: xx-large;
+}
+
+h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+}
 
 #story{
-    background-color: green;
     grid-row: 2;
+    margin-inline: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
 }
 
 #mission{
-    background-color: yellow;
     grid-row: 3;
+    margin-inline: 30px;
+    margin-block: 40px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
 }
 
 #team{
-    background-color: peru;
     grid-row: 4;
+    margin-inline: 30px;
+    margin-block: 40px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
 }
 
 footer{

@@ -1,0 +1,139 @@
+* {
+    margin: 0; padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+body{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+}
+header{
+    grid-row: 1;
+    background-color: #FEDBAF;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 85%;
+}
+#header img{
+    padding-left:10px;
+    height: 100px;
+}
+nav{
+    padding-right:25px;
+}
+nav a{
+    color: #492E16;
+    text-decoration: none;
+    margin-inline: 6px;
+}
+span{
+    font-weight: bold;
+}
+
+
+#main{
+    grid-row: 2;
+    color: #492E16;
+    background-image: url(../img/gradient_bg.jpg);
+    background-position: center;
+    height: 593px; 
+    background-repeat: repeat;
+    background-size:auto;
+}
+
+#main img{
+    border-radius: 25px;
+    height: 200px;
+}
+
+h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-block: 40px;
+    font-size: xx-large;
+}
+
+h3{
+    margin-block: 10px;
+}
+
+#flex{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 200px;
+}
+
+#flex p{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+#flex a{
+    margin-left: -10px;
+    background-color: #a3a3a3;
+    padding-inline: 30px;
+    padding-block: 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    font-size: medium;
+}
+
+#flex #available{
+    background-color: #568259;
+    padding-inline: 30px;
+    padding-block: 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    font-size: medium;
+}
+
+#product1{
+    border-radius: 25px;
+    padding: 30px;
+    background-color: white;
+    grid-row: 2;
+}
+
+#product2{
+    border-radius: 25px;
+    padding: 30px;
+    background-color: white;
+    grid-row: 2;
+}
+
+#product3{
+    border-radius: 25px;
+    padding: 30px;
+    background-color: white;
+    grid-row: 2;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    grid-row: 3;
+    background-color: #AEC4D5;
+    height: 50px;
+}
+footer p{
+    font-size: smaller;
+    font-style: italic;
+    text-align: center;
+    padding: 15px;
+}
