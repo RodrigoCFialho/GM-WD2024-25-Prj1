@@ -33,6 +33,9 @@ nav a{
     text-decoration: none;
     margin-inline: 6px;
 }
+nav a:hover{
+    font-weight: bold;
+}
 span{
     font-weight: bold;
 }
@@ -101,6 +104,10 @@ h3{
     color: white;
     border-radius: 15px;
     font-size: medium;
+}
+
+#flex #available:hover{
+    font-weight: bold;
 }
 
 footer{

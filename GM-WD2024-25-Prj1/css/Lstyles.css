@@ -33,6 +33,9 @@ nav a{
     text-decoration: none;
     margin-inline: 6px;
 }
+nav a:hover{
+    font-weight: bold;
+}
 span{
     font-weight: bold;
 }
@@ -81,6 +84,10 @@ h2{
     font-size: medium;
 }
 
+#submit:hover{
+    font-weight: bold;
+}
+
 #form p{
     padding-top: 20px;
     font-size: small;
@@ -93,7 +100,6 @@ h2{
     text-decoration: none;
     color: #568259;
 }
-
 
 footer{
     grid-row: 3;

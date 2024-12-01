@@ -46,6 +46,10 @@ nav a{
     margin-inline: 6px;
 }
 
+nav a:hover{
+    font-weight: bold;
+}
+
 /*Applies to main body*/
 
 #main{
@@ -77,6 +81,10 @@ span{
     color: white;
     border-radius: 10px;
     font-size: larger;
+}
+
+#main a:hover{
+    font-weight: bold;
 }
 
 /*Applies to footer*/
