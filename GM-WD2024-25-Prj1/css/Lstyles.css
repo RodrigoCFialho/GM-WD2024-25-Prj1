@@ -26,7 +26,7 @@ header{
     height: 100px;
 }
 nav{
-    padding-right:25px;
+    padding-right:5px;
 }
 nav a{
     color: #492E16;
@@ -36,11 +36,6 @@ nav a{
 span{
     font-weight: bold;
 }
-
-
-
-
-
 
 
 #main{
@@ -110,4 +105,54 @@ footer p{
     font-style: italic;
     text-align: center;
     padding: 15px;
+}
+
+/*Setting up responsive web design*/
+
+@media (max-width: 770px) {
+
+    /*Applies to header*/
+    #header{
+        width: 90%;
+    }
+    
+    #header img{
+        height: 75px;
+    }
+
+    /*Applies to navigation bar*/
+    nav a{
+        font-size: small;
+        margin-inline: 2px;
+    }
+
+    /*Applies to main body*/
+    #main{
+        height: 617px;
+    }
+
+    /*Applies to footer*/
+    footer p{
+        font-size:x-small;
+    }   
+}
+
+@media (max-width: 550px) {    
+
+
+}
+
+@media (max-width: 420px) {    
+
+    h2{
+        margin-block: 30px;
+        font-size: x-large;
+    }
+
+    #form{
+        margin-block: 20px;
+        height: 550px;
+        width: 300px;
+    }
+
 }

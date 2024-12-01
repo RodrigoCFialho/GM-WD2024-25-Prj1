@@ -26,7 +26,7 @@ header{
     height: 100px;
 }
 nav{
-    padding-right:25px;
+    padding-right:5px;
 }
 nav a{
     color: #492E16;
@@ -49,9 +49,9 @@ nav a{
     display: flex;
     position: relative;
     margin-inline: auto;
-    margin-block: 95px;
-    height: 400px;
-    width: 1100px;
+    margin-block: 45px;
+    height: 500px;
+    width: 900px;
     background-color: white;
     border-radius: 25px;
 }
@@ -59,27 +59,25 @@ nav a{
 #card img{
     border-radius: 25px;
     height: 200px;
+    margin-bottom: 20px;
 }
 
-#card #left{
+#core{
     margin: 40px;
 }
 
-#card #right{
+#description{
     margin-right: 50px;
     margin-left: 20px;
     margin-top: 40px;
 }
 
-#card img{
-    margin-bottom: 20px;
-}
 
-#left p{
+#core p{
     margin-bottom: 30px;
 }
 
-#left a{
+#core a{
     background-color: #568259;
     padding-inline: 30px;
     padding-block: 15px;
@@ -111,4 +109,148 @@ footer p{
     font-style: italic;
     text-align: center;
     padding: 15px;
+}
+
+
+/*Setting up responsive web design*/
+
+@media (max-width: 950px) {
+    #card{
+        flex-direction: column;
+        height: 550px;
+        margin-block: 20px;
+        width: 750px;
+    }
+
+    #core {
+        display: flex;
+        justify-content: space-between;
+        width: 53%;
+        align-items: center;
+    }
+
+    #card img{
+        height: 150px;
+        margin-bottom: 0px;
+        margin-right: 10px;
+    }
+
+    #core p{
+        margin-bottom: 50px;
+    }
+
+    #description{
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    h2{
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 770px) {
+
+    /*Applies to header*/
+    #header{
+        width: 90%;
+    }
+    
+    #header img{
+        height: 75px;
+    }
+
+    /*Applies to navigation bar*/
+    nav a{
+        font-size: small;
+        margin-inline: 2px;
+    }
+
+    /*Applies to main body*/
+    #main{
+        height: 617px;
+    }
+
+    #card{
+        margin-block: 35px;
+        width: 520px;
+    }
+
+    #core {
+        width: 75%;
+    }
+
+    #description{
+        margin-inline: 30px;
+        margin-top: -20px;
+    }
+
+    h2{
+        font-size: 27px;
+    }
+
+    h3{
+        font-size:large;
+        margin-bottom: 15px;
+    }
+
+    #description p{
+        font-size: medium;
+    }
+
+    /*Applies to footer*/
+    footer p{
+        font-size:x-small;
+    }   
+}
+
+@media (max-width: 550px) {    
+
+    #card{
+        width: 300px;
+    }
+
+    #core {
+        display: block;
+        margin-inline: 15px;
+        margin-block: 20px;
+    }
+
+    #card img{
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    #core p{
+        margin-bottom: 10px;
+    }
+
+    #core a{
+        padding-inline: 10px;
+        padding-block: 8px;
+        font-size: small;
+        margin-left: -5px;
+    }
+
+    #description{
+        margin-inline: 10px;
+        margin-top: 0px;
+    }
+
+    h2{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    h3{
+        font-size: 15px;
+        margin-bottom: 7px;
+    }
+
+    #description p{
+        font-size: 11px;
+    }
+
 }
