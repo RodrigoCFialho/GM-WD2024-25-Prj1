@@ -1,3 +1,34 @@
+/*MENU*/
+let menuIcon = document.querySelector("#menuIcon");
+menuIcon.onclick = function () {
+  showMenu(this);
+};
+
+function showMenu(x) {
+  x.classList.toggle("change");
+  let menu = document.querySelector("#navpop");
+    if (menu.style.visibility == "visible") {
+    menu.style.visibility = "hidden";
+  } else {
+    menu.style.visibility = "visible";
+  }
+}
+
+/* MODAL IN SHOP*/
+
+let imgsBanner = document.querySelectorAll(".product img");
+for (let i = 0; i < imgsBanner.length; i++) {
+  imgsBanner[i].onclick = function () {
+    onClick(this);
+  };
+}
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+
+/*GAME
 import { Preloader } from './Preloader.js';
 import { Play } from './Play.js';
 
@@ -17,4 +48,4 @@ const config = {
     ]
 };
 
-new Phaser.Game(config);
+new Phaser.Game(config);*/

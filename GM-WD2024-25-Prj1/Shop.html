@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/trashlogo.png" type="image/x-icon">
-    <title>Trash Shop - About</title>
+    <title>Trash Shop - Shop</title>
     <link rel="stylesheet" href="css/Sstyles.css">
     <link rel="stylesheet" href="css/normalize.css">
 </head>
-<body>
 
+<body>
+    
     <header>
         <div id="header">
             <a  href="LandingPage.html">
                 <img alt="Logo of Trash Shop" src="img/trashlogo.png">   
-            </a>
-        <div id="nav">
-            <nav>
-                <a href="About.html">About</a>
-                <span><a href="Shop.html">Shop</a></span>
-                <a href="Login.html">Login</a>
-            </nav>
-        </div>
+            </a> 
+            <div id="nav">
+                <nav>
+                    <a href="About.html">About</a>
+                    <span><a href="Shop.html">Shop</a></span>
+                    <a href="Login.html">Login</a>
+                    <a href="Game.html">Game</a>
+                </nav>
+            </div>
+            <div id="menuIcon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
         </div>
     </header>
+
     <div id="main">
+        <div id="navpop">
+            <nav>
+                <a href="About.html">About</a>
+                <a href="Shop.html">Shop</a>
+                <a href="Login.html">Login</a>
+                <a href="Game.html">Game</a>
+            </nav>
+        </div>
         <h2>Our Trash</h2>
         <div id="flex">
             <div class="product">
-                <img src="./img/liquidwaste.png" alt="">
+                <img src="./img/liquidwaste.png" alt="Liquid Waste">
                 <div class="prodinfo">
                     <h3>Liquid Waste</h3>
                     <p>00,00&#8364;</p>
@@ -36,7 +53,7 @@
                 </div>
             </div>
             <div class="product">
-                <img src="./img/safetyhazard.png" alt="">
+                <img src="./img/safetyhazard.png" alt="Hazardous Waste">
                 <div class="prodinfo">
                     <h3>Hazardous Waste</h3>
                     <p>00,00&#8364;</p>
@@ -44,19 +61,30 @@
                 </div>
             </div>
             <div class="product">
-                <img src="./img/organicwaste.png" alt="">
+                <img src="./img/organicwaste.png" alt="Organic Waste">
                 <div class="prodinfo">
                     <h3>Organic Waste</h3>
                     <p>00,00&#8364;</p>
                     <a href="">Unavailable</a>
                 </div>
             </div>
+
+            <div id="modal01" class="modal" onclick="this.style.display='none'">
+                <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <div class="modal-content">
+                    <img id="img01">
+                </div>
+            </div>
         </div>
     </div>
+
     <footer>
         <p>
             Copywrong&#169; 2024 Trash Shop - All Trash Reserved
         </p>
     </footer>
+
+    <script src="js/main.js"></script>
+
 </body>
 </html>
