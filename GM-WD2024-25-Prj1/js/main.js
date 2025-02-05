@@ -28,7 +28,7 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
 }
 
-/*GAME
+/*GAME*/
 import { Preloader } from './Preloader.js';
 import { Play } from './Play.js';
 
@@ -48,4 +48,4 @@ const config = {
     ]
 };
 
-new Phaser.Game(config);*/
+new Phaser.Game(config);

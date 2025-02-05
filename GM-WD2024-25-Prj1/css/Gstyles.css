@@ -101,6 +101,7 @@ span{
     background-repeat:no-repeat;
     background-size:auto;
     text-align: center;
+    contain: content;
 }
 
 #gameCanvas{
